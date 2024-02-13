@@ -7,6 +7,7 @@ app = Flask(__name__)
 def get_zipcodes():
     response = jsonify({
         'zipcodes': util.get_zipcodes()
+    })
     response.headers.add('Access-Control-Allow-Origin', '*')
 
     return response
