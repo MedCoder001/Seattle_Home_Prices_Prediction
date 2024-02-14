@@ -11,6 +11,8 @@
     <form class="form">
         <h2>Size (Square Feet)</h2>
         <input class="size" type="number" id="uiSqft" class="floatLabel" name="Squareft" value="1000">
+        <h2>Lot Size (Square Feet)</h2>
+        <input class="size" type="number" id="uiLot" class="floatLabel" name="Lotft" value="1000">
         <h2>Bedrooms</h2>
         <div class="switch_field">
             <input type="radio" id="radio-bedrooms-1" name="uiBedrooms" value="1"/>
@@ -41,13 +43,14 @@
         </div>
             <h2>Zip Code</h2>
         <div>
-    <select class="Zip" name="" id="uiZip"
+    <select class="zip" name="" id="uiZip">
         <option value="" disabled="disabled" selected="selected>Choose a ZipCode</option>
             <option value="98002">98002</option> 
             <option value="98003">98003</option>
+    </select>
 </div>
-
-
-</form>
+        <button type="button" class="submit" onclick="onClickedEstimatePrice()">Estimate Price</button>
+        <div id="uiEstimatedPrice" class="result"> <h2></h2> </div>
+    </form>
 </body>
 </html>
