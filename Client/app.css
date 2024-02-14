@@ -109,17 +109,16 @@ h2 {
 }
 
 .result{
-    background: #f2f2f2
+    background: #02204b;
     width: 76%;
-    height: 35px;
     border: 0;
-    box-sizing: border-box;
-    text-align: center;
-    color: #1a3981;
-    font-size: 15px;
-    cursor: pointer;
-    border-radius: 5px;
     margin: 25px 0 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+    height: 35px;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 5px;
 }
 
 .img {
