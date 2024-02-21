@@ -61,6 +61,12 @@ h2 {
     color: #1a3981;
 }
 
+h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
 .size {
     font-family: "Roboto", sans-serif;
     outline: 0;
@@ -109,7 +115,7 @@ h2 {
 }
 
 .result{
-    background: #02204b;
+    background: #d4ddeb;
     width: 76%;
     border: 0;
     margin: 25px 0 10px;

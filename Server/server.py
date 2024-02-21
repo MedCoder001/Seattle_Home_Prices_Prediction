@@ -9,24 +9,22 @@ def get_zipcodes():
         'zipcodes': util.get_zipcodes()
     })
     response.headers.add('Access-Control-Allow-Origin', '*')
-
     return response
 
 @app.route('/predict_home_price', methods=['POST'])
 def predict_home_price():
     beds = int(request.form['beds'])
     baths = int(request.form['baths'])
-    size = int(request.form['size'])
-    lot_size = int(request.form['lot_size'])
+    size = float(request.form['size'])
+    lot_size = float(request.form['lot_size'])
     zip_code = request.form['zip_code']
 
     response = jsonify({
         'estimated_price': util.get_estimated_price(beds, baths, size, lot_size, zip_code)
     })
     response.headers.add('Access-Control-Allow-Origin', '*')
-
     return response 
 
 if __name__ == '__main__':
     print("Server is running for Seattle home price prediction")
-    app.run()
+    app.run(debug=True)

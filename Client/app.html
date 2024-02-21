@@ -26,8 +26,7 @@
             <input type="radio" id="radio-bedrooms-5" name="uiBedrooms" value="5"/>
             <label for="radio-bedrooms-5">5</label>
         </div>
-        </form>
-    <form class="form">
+        
         <h2>Bathrooms</h2>
         <div class="switch-field">
             <input type="radio" id="radio-bathrooms-1" name="uiBathrooms" value="1"/>
@@ -41,15 +40,15 @@
             <input type="radio" id="radio-bathrooms-5" name="uiBathrooms" value="5"/>
             <label for="radio-bathrooms-5">5</label>
         </div>
-            <h2>Zip Code</h2>
-        <div>
-    <select class="zipcodes" name="" id="uiZipcodes">
-        <option value="" disabled="disabled" selected="selected>Choose a ZipCode</option>
-            <option value="98002">98002</option> 
-            <option value="98003">98003</option>
-    </select>
-</div>
+        
+        <h2>Zip Code</h2>
+        <select class="zipcodes" name="zip_code" id="uiZipcodes">
+            <option value="" disabled="disabled" selected="selected">Choose a ZipCode</option>
+            <option value="zip_code_98106">zip_code_98106</option> 
+            <option value="zip_code_98109">zip_code_98109</option>
+        </select>
+
         <button type="button" class="submit" onclick="onClickedEstimatePrice()">Estimate Price</button>
-        <div id="uiEstimatedPrice" class="result"> <h2></h2> </div>
+    <div id="uiEstimatedPrice" class="result"> <h2></h2> </div>
 </body>
 </html>
